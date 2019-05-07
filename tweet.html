@@ -3,6 +3,7 @@
   <head>
     <title>Tweet en html y css</title>
     <link type="text/css" rel="stylesheet" href="styles/styles.css"/>
+    <script type="text/javascript" src="functions.js"> </script>
   </head>
   <body>
     <div class="tweet">
@@ -12,8 +13,8 @@
           <p class="account-name">Jack</p>
           <span class="user-name">@jack</span>
         </div>
-        <a href="#" class="follow">
-          <span class="initial">Following</span>
+        <a href="#" class="follow" id="following" onclick="newFollow()">
+          <span class="initial" id="initialFollow" onclick="newInitial()" onclick="newReturn()">Follow</span>
         </a>
       </div>
       
@@ -33,15 +34,17 @@
         <p class="tweet-stat"><span>106,329</span> Retweets</p>
         <p class="tweet-stat"><span>80,450</span> Likes</p>
 
-        <ul class="avatar-list">
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
+        <a href="#">
+        <ul class="avatar-list"  >
+          <li >1</li>
+          <li >2</li>
+          <li >3</li>
+          <li >4</li>
+          <li >5</li>
         </ul> 
+      </a>
       </div>
-      <ul class="interactions side-padded">
+      <ul class="interactions side-padded" >
           <li>
               <a href="#">
                   <span class="icon"></span>
@@ -68,8 +71,8 @@
           </li>            
       </ul>
       <div class="tweet-reply">
-          <img class="reply-avatar">
-          <input type="text" placeholder="tweet your reply"/>
+          <a href="#" > <img class="reply-avatar" id="reply" onclick="avatarImg()"></a>
+          <input type="text" id= "placeholder-reply" onclick="newInputColor()" placeholder="tweet your reply"/>
         </div>
     </div>
   </body>

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-  body{
-=======
 p,ul{
   margin-block-start: 0;
     margin-block-end: 0;
@@ -9,7 +6,6 @@ p,ul{
 }
 
 body{
->>>>>>> 3e79b185ac6df02d43b6778caf2a03d6096ad96c
   background-color: #ccc;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -72,21 +68,41 @@ body{
   border:1px solid red;
   border-radius: 50px;
   width: 100px;
-  text-align: center;
+  
   margin: 15px 0 0 0;
   padding:6px 0;
   height: 32px;
   box-sizing: border-box;
-  color:#ff0000;
+  text-align: center;
   background-color: #fff;
   text-decoration:none;
   float: right;
   transition:background-color, 0.5s;
 }
 
+.tweet .tweet-header .follow .initial{
+  
+  color:#ff0000;
+  
+  
+}
+
 .tweet .tweet-header .follow:hover {
   background-color:#ff0000;
   color: white;
+}
+
+.tweet .tweet-header a.newFllw {
+  background-color: blue;
+  width: 150px;
+  font-weight: bold;
+}
+
+.tweet .tweet-header a.newFllw::after {
+  content:'Following'
+}
+.tweet .tweet-header a span.initialNoneFollow{
+  display:none;
 }
 
 .tweet .tweet-text {
@@ -162,6 +178,9 @@ font-size:18px;
     height: 45px;
   }
 
+ 
+ 
+
   .tweet .tweet-details .avatar-list li{
     display: block;
     background-color:#ccc;
@@ -175,6 +194,9 @@ font-size:18px;
     text-align: center;
   }
   
+ 
+
+
   .tweet .interactions{
     padding: 15px 0;
     overflow: hidden;
@@ -212,6 +234,8 @@ font-size:18px;
     margin-right: 5px;
   }
 
+  
+
   .tweet .tweet-reply {
     padding: 20px 25px;
     border-top: 1px solid #ccc;
@@ -245,6 +269,10 @@ font-size:18px;
     outline: none;
     border-color: red;
   }
+  .tweet .tweet-reply input.newInput{
+    background-color: pink;
+  }
+
 
 .limpiador{
   clear: both;
